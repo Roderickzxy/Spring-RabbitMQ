@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <!-- changes from the defaults -->
+        <setting name="lazyLoadingEnabled" value="false" />
+    </settings>
+    <mappers>
+        <!-- 基础数据表 -->
+        <!-- <mapper resource="mappers/generated/ApiLimitMapper.xml" />
+        <mapper resource="mappers/generated/ApiUsedRecordMapper.xml" /> -->
+    </mappers>
+    
+</configuration>
