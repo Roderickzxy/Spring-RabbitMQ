@@ -126,7 +126,7 @@
     <!-- 监听模式，有消息到达会通知监听在对应队列的监听对象-->
 	<rabbit:listener-container connection-factory="connectionFactory" acknowledge="auto">
 		<rabbit:listener queues="queue_key" ref="directMessageConsumer"/>
-		<rabbit:listener queues="queue_chris" ref="directMessagesConsumer"/>
+		<rabbit:listener queues="queue_key" ref="directMessagesConsumer"/>
 		<rabbit:listener queues="queue_topic" ref="topicMessageConsumer"/>
 	</rabbit:listener-container>
 

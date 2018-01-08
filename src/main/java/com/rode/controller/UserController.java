@@ -24,12 +24,12 @@ public class UserController {
         int a = 100;
         while (a > 0) {
             messageProducer.sendMessage("Hello, I am amq sender num :" + a--);
-            try {
-                //暂停一下，好让消息消费者去取消息打印出来
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+//            try {
+//                //暂停一下，好让消息消费者去取消息打印出来
+//                Thread.sleep(1000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
 
         }
         return "success";

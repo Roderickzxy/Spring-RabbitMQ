@@ -26,7 +26,7 @@ public class MessageProducer implements Producer{
     @Override
     public void sendMessage(Object message) {
         directMqTemplate.convertAndSend("queue_key", message);
-        directMqTemplate.convertAndSend("queue_chris", message);
-        TopicMqTemplate.convertAndSend("topic.xxxx.shit", message);
+//        directMqTemplate.convertAndSend("queue_chris", message);
+//        TopicMqTemplate.convertAndSend("topic.xxxx.shit", message);
     }
 }
